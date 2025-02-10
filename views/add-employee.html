@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Add Employee</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" ng-model="employee.Name" required>
+        
+        <label for="position">Position:</label>
+        <input type="text" ng-model="employee.Position" required>
+        
+        <label for="office">Office:</label>
+        <input type="text" ng-model="employee.Office" required>
+        
+        <label for="salary">Salary:</label>
+        <input type="number" ng-model="employee.Salary" required>
+        
+        <button type="submit" class="btn btn-edit" ng-click="addEmployee()">Submit</button>
+        <button type="button" class="btn btn-delete" ng-click="cancel()">Cancel</button>
+    </form>
+</div>

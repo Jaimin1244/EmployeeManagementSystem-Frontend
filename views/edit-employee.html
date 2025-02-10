@@ -1,0 +1,24 @@
+<div class="container" ng-controller="EditEmployeeController">
+    <h2>Edit Employee</h2>
+    <form ng-submit="updateEmployee()">
+      <div>
+        <label>Name:</label>
+        <input type="text" ng-model="employee.Name" required />
+      </div>
+      <div>
+        <label>Position:</label>
+        <input type="text" ng-model="employee.Position" required />
+      </div>
+      <div>
+        <label>Office:</label>
+        <input type="text" ng-model="employee.Office" required />
+      </div>
+      <div>
+        <label>Salary:</label>
+        <input type="number" ng-model="employee.Salary" required />
+      </div>
+      <button type="submit" class="btn btn-edit">Update </button>
+      <button type="button" class="btn btn-delete" ng-click="cancel()">Cancel</button>
+    </form>
+  </div>
+  
